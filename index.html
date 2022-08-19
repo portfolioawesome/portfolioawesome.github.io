@@ -16,7 +16,11 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-<script nonce="f45f4c6c-a909-475a-b843-19b0ee767dee">(function(w,d){!function(a,e,t,r){a.zarazData=a.zarazData||{};a.zarazData.executed=[];a.zaraz={deferred:[]};a.zaraz.q=[];a.zaraz._f=function(e){return function(){var t=Array.prototype.slice.call(arguments);a.zaraz.q.push({m:e,a:t})}};for(const e of["track","set","ecommerce","debug"])a.zaraz[e]=a.zaraz._f(e);a.zaraz.init=()=>{var t=e.getElementsByTagName(r)[0],z=e.createElement(r),n=e.getElementsByTagName("title")[0];n&&(a.zarazData.t=e.getElementsByTagName("title")[0].text);a.zarazData.x=Math.random();a.zarazData.w=a.screen.width;a.zarazData.h=a.screen.height;a.zarazData.j=a.innerHeight;a.zarazData.e=a.innerWidth;a.zarazData.l=a.location.href;a.zarazData.r=e.referrer;a.zarazData.k=a.screen.colorDepth;a.zarazData.n=e.characterSet;a.zarazData.o=(new Date).getTimezoneOffset();a.zarazData.q=[];for(;a.zaraz.q.length;){const e=a.zaraz.q.shift();a.zarazData.q.push(e)}z.defer=!0;for(const e of[localStorage,sessionStorage])Object.keys(e||{}).filter((a=>a.startsWith("_zaraz_"))).forEach((t=>{try{a.zarazData["z_"+t.slice(7)]=JSON.parse(e.getItem(t))}catch{a.zarazData["z_"+t.slice(7)]=e.getItem(t)}}));z.referrerPolicy="origin";z.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(a.zarazData)));t.parentNode.insertBefore(z,t)};["complete","interactive"].includes(e.readyState)?zaraz.init():a.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);</script></head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="assets/data.json"></script>
+<script src="assets/engine.js"></script>
+
+</head>
 <body>
 
 <div id="preloder">
@@ -28,11 +32,11 @@
 <div class="row">
 <div class="col-lg-4 col-md-3">
 <div class="logo">
-<h2 class="site-logo">Portfolio Awesome</h2>
+<h2 class="site-logo" id="id_nama_company">Portfolio Awesome</h2>
 </div>
 </div>
 <div class="col-lg-8 col-md-9">
-<a href="" class="site-btn header-btn">Get in touch</a>
+<a href="#id_email" class="site-btn header-btn">Get in touch</a>
 <nav class="main-menu">
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -67,79 +71,33 @@
 <ul class="portfolio-filter controls">
 <li class="control" data-filter="all">All</li>
 <li class="control" data-filter=".web">Portfolio</li>
+<li class="control" data-filter=".portfolio">Portfolio new</li>
 <li class="control" data-filter=".digital">Resume</li>
 <li class="control" data-filter=".rened">Photographer</li>
 <li class="control" data-filter=".brand">CV</li>
 </ul>
 </div>
+
+
+
 <div class="container-fluid p-md-0 ">
-<div class="row portfolios-area">
-<div class="mix col-lg-6 col-md-6 web">
-<a href="assets/1.jpg" class="portfolio-item set-bg" data-setbg="assets/1.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-6 col-md-6 digital">
-<a href="assets/2.jpg" class="portfolio-item set-bg " data-setbg="assets/2.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-4 col-md-6 web">
-<a href="assets/3.jpg" class="portfolio-item set-bg" data-setbg="assets/3.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-4 col-md-6 digital">
-<a href="assets/4.jpg" class="portfolio-item set-bg" data-setbg="assets/4.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-4 col-md-6 rened">
-<a href="assets/5.jpg" class="portfolio-item set-bg" data-setbg="assets/5.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-12 col-md-6 brand">
-<a href="assets/6.jpg" class="portfolio-item set-bg" data-setbg="assets/6.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-6 col-md-6 rened">
-<a href="assets/7.jpg" class="portfolio-item set-bg" data-setbg="assets/7.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-<div class="mix col-lg-6 col-md-6 brand">
-<a href="assets/8.jpg" class="portfolio-item set-bg" data-setbg="assets/8.jpg">
-<div class="pi-inner">
-<h2>> See Preview</h2>
-</div>
-</a>
-</div>
-</div>
+
+	<div class="row" id="id_template">
+	</div>
+
+
 </div>
 </section>
 
 
+
 <footer class="footer-section text-center">
 <div class="container">
-<h2 class="section-title mb-5">Let’s work together</h2>
-<h4 class="">portfolioawesome@gmail.com</h4>
-<a href="mailto: portfolioawesome@gmail.com" class="site-btn">Get in touch</a>
+<h2 class="section-title mb-5">Let's work together</h2>
+<a href="mailto: portfolioawesome@gmail.com">
+	<h4 class="" id="id_email">portfolioawesome@gmail.com</h4>
+</a>
+<a href="#" id="id_shop" class="site-btn">Go to shop</a>
 <div class="social-links">
 <a href=""><span class="fa fa-pinterest"></span></a>
 <a href=""><span class="fa fa-linkedin"></span></a>

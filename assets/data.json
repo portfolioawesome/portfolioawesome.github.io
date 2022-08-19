@@ -1,0 +1,61 @@
+var datas = {
+	"company": { 
+		"nama":"Portfolio Awesome",
+		"email":"portfolioawesome@gmail.com",
+		"phone":"011-11276709",
+        "shop_link":"-"
+	},
+
+	"template": [
+		{
+			"name":"Python",
+			"preview_link": "/alpha/index.html",
+			"shop_link": "/alpha/index.html",
+            "img": "assets/1.jpg",
+            "harga": "RM 80",
+            "jenis": "portfolio"
+		},
+		{
+			"name":"PHP",
+			"preview_link": "/alpha/index.html",
+			"shop_link": "/alpha/index.html",
+            "img": "assets/2.jpg",
+            "harga": "RM 80",
+            "jenis": "portfolio"
+		},
+		{
+			"name":"Laravel",
+			"preview_link": "/alpha/index.html",
+			"shop_link": "/alpha/index.html",
+            "img": "assets/3.jpg",
+            "harga": "RM 80",
+            "jenis": "portfolio"
+		},
+		{
+			"name":"Github",
+			"preview_link": "/alpha/index.html",
+			"shop_link": "/alpha/index.html",
+            "img": "assets/4.jpg",
+            "harga": "RM 80",
+            "jenis": "portfolio"
+		},
+		{
+			"name":"Linux",
+			"preview_link": "/alpha/index.html",
+			"shop_link": "/alpha/index.html",
+            "img": "assets/6.jpg",
+            "harga": "RM 80",
+            "jenis": "portfolio"
+		},
+		{
+			"name":"DevOps",
+			"preview_link": "/alpha/index.html",
+			"shop_link": "/alpha/index.html",
+            "img": "assets/6.jpg",
+            "harga": "RM 80",
+            "jenis": "portfolio"
+		}
+
+	],
+
+};
